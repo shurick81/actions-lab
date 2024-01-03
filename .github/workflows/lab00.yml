@@ -5,7 +5,7 @@ on:
   push:
     paths:
     - .github/workflows/lab00.yml
-    - actions/reusable_action_00/action.yml
+    - reusable/action_00/action.yml
 
 jobs:
   first-job:
