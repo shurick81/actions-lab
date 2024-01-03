@@ -1,9 +1,0 @@
-inputs:
-  some_input:
-    description: 'Any string'
-    default: 'Not empty'
-runs:
-  using: "composite"
-  steps:
-  - run: echo ${{ inputs.some_input }}
-    shell: bash
