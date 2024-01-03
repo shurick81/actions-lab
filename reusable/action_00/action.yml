@@ -1,4 +1,4 @@
-inputs
+inputs:
   some_input:
     description: 'Any string'
     default: 'Not empty'
