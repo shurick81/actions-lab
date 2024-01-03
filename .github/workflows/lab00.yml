@@ -12,5 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - run: ls ./actions/reusable_action_00
-    - uses: ./actions/reusable_action_00
+    - run: ls ./reusable
+    - run: ls ./reusable/action_00
+    - uses: ./reusable/action_00
