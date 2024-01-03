@@ -13,3 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: ./reusable/action_00
+      with:
+        some_input: Something Meaningful
