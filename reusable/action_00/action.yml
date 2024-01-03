@@ -2,4 +2,4 @@ inputs:
   some_input:
     description: 'Any string'
     default: 'Not empty'
-  run: echo ${{ inputs.some_input }}
+  run: echo 0
