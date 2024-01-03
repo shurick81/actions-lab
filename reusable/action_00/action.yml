@@ -2,4 +2,5 @@ inputs:
   some_input:
     description: 'Any string'
     default: 'Not empty'
-  run: echo 0
+steps:
+- run: echo 0
