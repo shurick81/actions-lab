@@ -3,4 +3,6 @@ inputs:
     description: 'Any string'
     default: 'Not empty'
 steps:
-- run: echo 0
+- runs:
+  steps:
+  - run: echo 0
