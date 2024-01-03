@@ -5,5 +5,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-  - run: echo 0
+  - run: echo ${{ inputs.some_input }}
     shell: bash
