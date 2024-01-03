@@ -5,3 +5,4 @@ inputs:
 runs:
   steps:
   - run: echo 0
+    shell: bash
