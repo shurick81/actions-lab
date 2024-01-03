@@ -3,6 +3,7 @@ inputs:
     description: 'Any string'
     default: 'Not empty'
 runs:
+  using: "composite"
   steps:
   - run: echo 0
     shell: bash
