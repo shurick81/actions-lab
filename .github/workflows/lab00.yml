@@ -15,3 +15,14 @@ jobs:
     - uses: ./reusable/action_00
       with:
         some_input: Something Meaningful
+  second-job:
+    needs: first-job
+    if: github.repository == 'octo-org/octo-repo-prod'
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Second job complete"
+  third-job:
+    needs: second-job
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Third job complete"
