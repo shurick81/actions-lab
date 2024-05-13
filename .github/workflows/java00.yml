@@ -1,4 +1,4 @@
-name: Lab00
+name: Java00
 
 on:
   workflow_dispatch:
