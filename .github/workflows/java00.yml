@@ -9,7 +9,7 @@ on:
     - pom.xml
 
 jobs:
-  general-job:
+  publish-as-github-artifact:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -22,3 +22,18 @@ jobs:
       with:
         name: Package
         path: target
+  publish-as-github-package:
+    run-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+    - name: Publish package
+      run: mvn --batch-mode deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
