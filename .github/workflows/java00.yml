@@ -6,6 +6,7 @@ on:
     paths:
     - .github/workflows/java00.yml
     - src/**
+    - pom.xml
 
 jobs:
   general-job:
