@@ -1,0 +1,19 @@
+name: Lab00
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+    - .github/workflows/java00.yml
+    - src/**
+
+jobs:
+  general-job:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    - run: mvn --batch-mode --update-snapshots verify
