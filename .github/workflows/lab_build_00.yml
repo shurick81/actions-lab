@@ -1,0 +1,11 @@
+name: Build
+on:
+  push:
+    paths:
+    - '.github/workflows/lab_build_00.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Build complete"
