@@ -3,6 +3,7 @@ on:
   workflow_run:
     workflows: [Build]
     types: [completed]
+    branches: [feature/build-deploy-workflow]
 
 jobs:
   build:
