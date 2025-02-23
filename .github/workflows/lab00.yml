@@ -11,6 +11,7 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
+    - run: echo $(pwd)
     - run: docker image list
     - uses: actions/checkout@v4
     - uses: ./reusable/action_00
